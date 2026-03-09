@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lecture 6 – Async Basics</title>
+  <link rel="stylesheet" href="exercise.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lecture 6 – Asynchronous JavaScript</h1>
+    <p class="subtitle">Timeout • Promise • Async/Await • Fetch</p>
+
+    <!-- Exercise 1 — Async Timeout -->
+    <div class="card">
+      <h2>1. Async Timeout</h2>
+      <p>Demonstrates that JavaScript does <strong>not</strong> wait. <code>setTimeout</code> schedules a task for later.</p>
+      <div class="row">
+        <button id="btnTimeout">Async Timeout</button>
+      </div>
+    </div>
+
+    <!-- Exercise 2 — Async Promise -->
+    <div class="card">
+      <h2>2. Async Promise</h2>
+      <p>A <code>Promise</code> represents a value that will arrive in the future. <code>.then()</code> runs after it resolves.</p>
+      <div class="row">
+        <button id="btnPromise">Async Promise</button>
+      </div>
+    </div>
+
+    <!-- Exercise 3 — Async Await -->
+    <div class="card">
+      <h2>3. Async / Await</h2>
+      <p>Modern way to work with Promises. <code>await</code> pauses the function without freezing the browser.</p>
+      <div class="row">
+        <button id="btnAwait">Async Await</button>
+      </div>
+    </div>
+
+    <!-- Exercise 4 — Async Fetch -->
+    <div class="card">
+      <h2>4. Async Fetch</h2>
+      <p>Uses <code>fetch</code> to get real data from an API. Includes error handling with <code>try/catch/finally</code>.</p>
+      <div class="row">
+        <button id="btnFetch">Async Fetch</button>
+      </div>
+    </div>
+
+    <!-- Output area -->
+    <div class="card">
+      <h2>Output</h2>
+      <p id="status">Status: Idle</p>
+      <pre id="output">...</pre>
+    </div>
+
+    <footer>
+      <p>Browser Programming — Lecture 6 (Async JavaScript)</p>
+    </footer>
+  </div>
+
+  <script src="exercise.js"></script>
+</body>
+</html>
