@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <span class="nav-brand">Aether Weather</span>
+        <div class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Forecast</a>
+            <a href="#">Radar</a>
+        </div>
+    </nav>
+
+    <main class="page">
+
+        <header class="page-header">
+            <h1>Weather Dashboard</h1>
+            <p>This page loads current weather data from a public API. Experience atmospheric precision across the Finnish landscape.</p>
+        </header>
+
+        <div class="dashboard">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <p class="sidebar-label">SELECT LOCATION</p>
+                <ul class="city-list">
+                    <li class="city-item active" data-city="Kuopio" data-lat="62.8924" data-lon="27.6770">
+                        Kuopio <span class="arrow">›</span>
+                    </li>
+                    <li class="city-item" data-city="Helsinki" data-lat="60.1699" data-lon="24.9384">
+                        Helsinki
+                    </li>
+                    <li class="city-item" data-city="Oulu" data-lat="65.0121" data-lon="25.4651">
+                        Oulu
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Weather panel -->
+            <section class="weather-panel" id="weatherBox">
+                <div class="panel-top">
+                    <div class="panel-title">
+                        <span class="dot">📍</span>
+                        <span class="conditions-label">CURRENT CONDITIONS</span>
+                    </div>
+                    <div class="sync-block">
+                        <span class="sync-label">Sync Time</span>
+                        <span class="sync-time" id="time">-</span>
+                    </div>
+                </div>
+
+                <h2 class="city-name" id="city">-</h2>
+
+                <div class="metric-cards">
+                    <div class="metric-card">
+                        <span class="metric-icon">🌡️</span>
+                        <span class="metric-label">TEMPERATURE</span>
+                        <span class="metric-value" id="temperature">-</span>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-icon">💨</span>
+                        <span class="metric-label">WIND SPEED</span>
+                        <span class="metric-value" id="wind">-</span>
+                    </div>
+                </div>
+
+                <pre id="output"></pre>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
