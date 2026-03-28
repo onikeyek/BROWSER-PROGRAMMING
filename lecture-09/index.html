@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Backend Test</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; }
+    button { margin: 6px 4px; padding: 8px 16px; cursor: pointer; }
+    #output, #student-output { margin-top: 12px; padding: 12px; background: #f0f0f0; border-radius: 6px; min-height: 24px; }
+    .loading { color: #888; font-style: italic; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+  <h1>Backend API Test</h1>
+
+  <button onclick="getMessage()">Get Message</button>
+  <button onclick="getStudent()">Get Student</button>
+
+  <h3>Message Response:</h3>
+  <div id="output"></div>
+
+  <h3>Student Response:</h3>
+  <div id="student-output"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
